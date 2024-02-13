@@ -8,6 +8,7 @@ const reactionEmoji = {
   heart: "❤️",
   rocket: "🚀",
   coffee: "☕",
+  tea: "🍵"
 };
 
 function ReactionButton({ post }) {

@@ -8,7 +8,8 @@ const initialState = [
             wow: 0,
             heart: 0,
             rocket: 0,
-            coffee: 0
+            coffee: 0,
+            tea: 0,
         }
     },
     {
@@ -17,9 +18,30 @@ const initialState = [
             wow: 0,
             heart: 0,
             rocket: 0,
-            coffee: 0
+            coffee: 0,
+            tea: 0
+        }
+    }, {
+        id: '3', title: 'Mühendislik', content: "Mühendislik hosdur fakat diferansiyel denklemler zordur", date: sub(new Date(), { minutes: 12 }).toISOString(), reactions: {
+            thumbsUp: 0,
+            wow: 0,
+            heart: 2,
+            rocket: 5,
+            coffee: 0,
+            tea: 0
+        }
+    }, {
+        id: '4', title: 'Çay', content: "Canım çay çekti gidip de demliyim bari..", date: sub(new Date(), { minutes: 9 }).toISOString(), reactions: {
+            thumbsUp: 6,
+            wow: 0,
+            heart: 0,
+            rocket: 0,
+            coffee: 3,
+            tea: 12
         }
     }
+
+
 ]
 
 const postsSlice = createSlice({
@@ -43,7 +65,8 @@ const postsSlice = createSlice({
                             wow: 0,
                             heart: 0,
                             rocket: 0,
-                            coffee: 0
+                            coffee: 0,
+                            tea: 0
                         }
                     }
                 }
